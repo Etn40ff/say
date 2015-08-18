@@ -1,0 +1,22 @@
+This LaTeX package provides signed and numbered marginal comments.
+
+Get the latest version at 
+https://github.com/Etn40ff/say
+
+USAGE:
+
+This package, called without options, adhere to the global draft/final LaTeX
+options i.e. unless draft is passed to \documentclass it does nothing.
+
+To override the global behaviour just pass manually the option draft or final
+that you want. For example
+\usepackage[draft]{say}
+will force the notes to appear.
+
+The extra option hidenumbers can be used avoid printing numbers in the text
+\usepackage[draft,hidenumbers]{say}
+
+To make a comment the command is
+\say[Your name goes here]{Your comment goes here.}
+for convenience it might be better to define aliases like this one
+\newcommand{\saySS}[1]{\say[SS]{#1}}
