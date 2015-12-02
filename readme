@@ -1,3 +1,12 @@
+%-----------------------------------------------------------------------------
+% "THE ICE-CREAM-WARE LICENSE":
+% Salvatore Stella wrote this file based on an original set of macros by
+% Nathan Reading. As long as you retain this notice you can do whatever you
+% want with this stuff. If we meet some day, and you think this stuff is
+% worth it, you can buy us some ice cream in return.
+% Nathan Reading and Salvatore Stella
+%-----------------------------------------------------------------------------
+
 This LaTeX package provides signed and numbered marginal comments.
 
 Get the latest version at 
@@ -20,3 +29,9 @@ To make a comment the command is
 \say[Your name goes here]{Your comment goes here.}
 for convenience it might be better to define aliases like this one
 \newcommand{\saySS}[1]{\say[SS]{#1}}
+
+If you use the geometry package to change the width of your page you might
+have to specify also marginparwidth to avoid your notes going out of the
+page. For example:
+\usepackage[margin=1in, marginparwidth=0.8in]{geometry}
+
